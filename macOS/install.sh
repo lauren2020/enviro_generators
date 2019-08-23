@@ -15,17 +15,17 @@ while [  $accepted -eq 0 ]; do
     then
         accepted=1
 #        ./vBasic.sh
-        "sh -c \"$(curl -fsSL https://raw.githubusercontent.com/lauren2020/enviro_generators/master/macOS/vBasic.sh)\""
+        sh -c "$(curl -fsSL https://raw.githubusercontent.com/lauren2020/enviro_generators/master/macOS/vBasic.sh)"
     elif [ $version -eq 1 ]
     then
         accepted=1
 #        ./vGraham.sh
-        "sh -c \"$(curl -fsSL https://raw.githubusercontent.com/lauren2020/enviro_generators/master/macOS/vGraham.sh)\""
+        sh -c "$(curl -fsSL https://raw.githubusercontent.com/lauren2020/enviro_generators/master/macOS/vGraham.sh)"
     elif [ $version -eq 2 ]
     then
         accepted=1
 #       ./vFun.sh
-        "sh -c \"$(curl -fsSL https://raw.githubusercontent.com/lauren2020/enviro_generators/master/macOS/vFun.sh)\""
+        sh -c "$(curl -fsSL https://raw.githubusercontent.com/lauren2020/enviro_generators/master/macOS/vFun.sh)"
     elif [ $version -eq 3 ]
     then
         accepted=1
