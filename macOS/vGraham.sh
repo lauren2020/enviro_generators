@@ -15,7 +15,7 @@ function iterm () {
                 tell the last session
                     delay 1
 #                    write text "./vGraham_iTerm.sh"
-                    write text "sh -c \"$(curl -fsSL https://raw.githubusercontent.com/lauren2020/enviro_generators/master/macOS/vGraham_iTerm.sh)\""
+#                    write text "sh -c \"$(curl -fsSL https://raw.githubusercontent.com/lauren2020/enviro_generators/master/macOS/vGraham_iTerm.sh)\""
                 end
             end tell
 #            tell current session of term
