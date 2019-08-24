@@ -60,5 +60,16 @@ else
     echo "sl already installed. Skipping"
 fi
 
+# telnet
+# 'telnet towel.blinkenlights.nl' to play Star Wars rendered in ascii charachters
+telnetInstalled=0
+if [ $telnetInstalled -eq 1 ]
+then
+    echo "Installing telnet..."
+    brew install telnet
+else
+    echo "telnet already installed. Skipping"
+fi
+
 echo "Fun Features:"
 echo 'Make your computer say anything by writing the command: say "your words here"'
