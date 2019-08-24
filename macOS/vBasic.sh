@@ -1,5 +1,5 @@
 #!/bin/sh
-echo "Setting up vBasic enviroment..."
+echo "Setting up vColdPizza enviroment..."
 echo "Downloading iTerm..."
 #
 
