@@ -1,30 +1,39 @@
 #!/bin/sh
-echo "Setting up vHappyCar enviroment..."
-echo "Downloading iTerm..."
-#
+echo "Setting up vHappyCar enviorment..."
 
-[ `uname -s` != "Darwin" ] && return
+###### TODO: Check if each is already installed
 
-function iterm () {
-osascript &>/dev/null <<EOF
-tell application "iTerm2"
-activate
-set term to (make new terminal)
-tell term
-launch session "Default Session"
-tell the last session
-delay 1
-#                    write text "./vGraham_iTerm.sh"
-#                    write text "sh -c \"$(curl -fsSL https://raw.githubusercontent.com/lauren2020/enviro_generators/master/macOS/vGraham_iTerm.sh)\""
-end
-end tell
-#            tell current session of term
-#                delay 1
-#                write text "./vGraham_iTerm.sh"
-#            end tell
-end tell
-EOF
-}
-iterm $@
+# zsh
+# https://github.com/robbyrussell/oh-my-zsh
+zshInstalled=0
+if [ $zshInstalled -eq 1 ]
+then
+echo "Installing zsh..."
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+else
+echo "zsh already installed. Skipping..."
+fi
 
-echo "Opening iTerm..."
+# fzf
+# https://github.com/junegunn/fzf
+fzfInstalled=0
+if [ $fzfInstalled -eq 1 ]
+then
+echo "Installing fzf..."
+$(brew --prefix)/opt/fzf/install
+else
+echo "fzf already installed. Skipping..."
+fi
+
+# scm_breeze
+# https://github.com/scmbreeze/scm_breeze
+scmBreezeInstalled=0
+if [ $scmBreezeInstalled -eq 1 ]
+then
+echo "Installing scm_breeze..."
+git clone git://github.com/scmbreeze/scm_breeze.git ~/.scm_breeze
+~/.scm_breeze/install.sh
+source ~/.zshrc
+else
+echo "scm_breeze already installed. Skipping"
+fi
