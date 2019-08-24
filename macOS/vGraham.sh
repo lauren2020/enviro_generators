@@ -63,7 +63,7 @@ fi
 # neovim
 # https://github.com/neovim/neovim/wiki/Installing-Neovim
 neovimInstalled=0
-if [ neovimInstalled -eq 1 ]
+if [ $neovimInstalled -eq 1 ]
 then
 echo "Installing neovim..."
 brew install neovim
@@ -74,7 +74,7 @@ fi
 # bat
 # https://github.com/sharkdp/bat
 batInstalled=0
-if [ batInstalled -eq 1 ]
+if [ $batInstalled -eq 1 ]
 then
 echo "Installing bat..."
 brew install bat

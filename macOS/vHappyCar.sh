@@ -37,3 +37,28 @@ source ~/.zshrc
 else
 echo "scm_breeze already installed. Skipping"
 fi
+
+# cmus
+# https://github.com/cmus/cmus
+cmusInstalled=0
+if [ $fzfInstalled -eq 1 ]
+then
+    echo "Installing cmus..."
+    brew install cmus
+else
+    echo "cmus already installed. Skipping"
+fi
+
+# steam locomotive
+# execute using 'sl'
+slInstalled=0
+if [ $slInstalled -eq 1 ]
+then
+    echo "Installing sl..."
+    brew install sl
+else
+    echo "sl already installed. Skipping"
+fi
+
+echo "Fun Features:"
+echo 'Make your computer say anything by writing the command: say "your words here"'

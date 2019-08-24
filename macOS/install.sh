@@ -41,7 +41,7 @@ export ENVIRO_VERSION=$versionName
 ### TODO: Check if iTerm is installed
 
 itermInstalled=0
-if [ itermInstalled -eq 1 ]
+if [ $itermInstalled -eq 1 ]
 then
     echo "Downloading iTerm..."
     curl -sS https://iterm2.com/downloads/stable/iTerm2-3_3_2.zip > iterm.zip
