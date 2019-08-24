@@ -62,7 +62,7 @@ osascript &>/dev/null <<EOF
             launch session "Default Session"
             tell the last session
                 delay 1
-                write text "sh -c \"$(curl -fsSL https://raw.githubusercontent.com/lauren2020/enviro_generators/master/macOS/${versionName}.sh)\""
+                write text 'sh -c \"$(curl -fsSL https://raw.githubusercontent.com/lauren2020/enviro_generators/master/macOS/${versionName}.sh)\"'
             end
         end tell
     end tell
@@ -71,3 +71,4 @@ EOF
 iterm $@
 
 echo "Opening iTerm..."
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/lauren2020/enviro_generators/master/macOS/${versionName}.sh)"
