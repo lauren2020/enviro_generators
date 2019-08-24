@@ -54,6 +54,7 @@ fi
 [ `uname -s` != "Darwin" ] && return
 
 function iterm () {
+echo "Running iterm func"
 osascript &>/dev/null <<EOF
     tell application "iTerm2"
         activate
@@ -71,4 +72,3 @@ EOF
 iterm $@
 
 echo "Opening iTerm..."
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/lauren2020/enviro_generators/master/macOS/${versionName}.sh)"
