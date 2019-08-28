@@ -40,7 +40,7 @@ export ENVIRO_VERSION=$versionName
 ### TODO: Check if user is in iTerm
 ### TODO: Check if iTerm is installed
 
-itermInstalled=0
+itermInstalled=1
 if [ $itermInstalled -eq 1 ]
 then
     echo "Downloading iTerm..."
