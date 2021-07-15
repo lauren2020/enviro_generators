@@ -5,7 +5,7 @@ versionName=""
 echo "
 What version enviroment version would you like to setup?
     [0] vColdPizza (Basic)
-    [1] vGraham (Efficient)
+    [1] vIronClad (Efficient)
     [2] vHappyCar (Fun Theme)
     [3] vHandleBar (Java Optimized)
     [4] Quit"
@@ -19,7 +19,7 @@ while [  $accepted -eq 0 ]; do
         versionName="vColdPizza"
     elif [ $version -eq 1 ]
     then
-        versionName="vGraham"
+        versionName="vIronClad"
     elif [ $version -eq 2 ]
     then
         versionName="vHappyCar"
