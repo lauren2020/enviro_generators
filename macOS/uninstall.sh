@@ -4,7 +4,7 @@ uninstallVersion=$ENVIRO_VERSION
 if [ $uninstallVersion == "vColdPizza" ]
 then
 	echo "Uninstalling enviroment setup vBasic"
-elif [ $uninstallVersion == "vGraham" ]
+elif [ $uninstallVersion == "vIronClad" ]
 then
 	echo "Uninstalling enviroment setup vGraham"
 elif [ $uninstallVersion == "vHappyCar" ]
