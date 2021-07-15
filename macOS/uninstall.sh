@@ -6,7 +6,7 @@ then
 	echo "Uninstalling enviroment setup vBasic"
 elif [ $uninstallVersion == "vIronClad" ]
 then
-	echo "Uninstalling enviroment setup vGraham"
+	echo "Uninstalling enviroment setup vIronClad"
 elif [ $uninstallVersion == "vHappyCar" ]
 then
 	echo "Uninstalling enviroment setup vFun"
