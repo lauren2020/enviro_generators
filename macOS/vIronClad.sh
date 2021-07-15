@@ -1,5 +1,5 @@
 #!/bin/sh
-echo "Setting up vGraham enviorment..."
+echo "Setting up vIronClad enviorment..."
 
 ###### TODO: Check if each is already installed
 
