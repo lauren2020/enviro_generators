@@ -5,7 +5,7 @@ echo "Setting up vIronClad enviorment..."
 
 # zsh
 # https://github.com/robbyrussell/oh-my-zsh
-zshInstalled=0
+zshInstalled=1
 if [ $zshInstalled -eq 1 ]
 then
 echo "Installing zsh..."
@@ -16,7 +16,7 @@ fi
 
 # fzf
 # https://github.com/junegunn/fzf
-fzfInstalled=0
+fzfInstalled=1
 if [ $fzfInstalled -eq 1 ]
 then
 echo "Installing fzf..."
@@ -27,7 +27,7 @@ fi
 
 # scm_breeze
 # https://github.com/scmbreeze/scm_breeze
-scmBreezeInstalled=0
+scmBreezeInstalled=1
 if [ $scmBreezeInstalled -eq 1 ]
 then
 echo "Installing scm_breeze..."
@@ -40,7 +40,7 @@ fi
 
 # fd
 # https://github.com/sharkdp/fd
-fdInstalled=0
+fdInstalled=1
 if [ $fdInstalled -eq 1 ]
 then
 echo "Installing fd..."
@@ -51,7 +51,7 @@ fi
 
 # ripgrep
 # https://github.com/BurntSushi/ripgrep
-ripgrepInstalled=0
+ripgrepInstalled=1
 if [ $ripgrepInstalled -eq 1 ]
 then
 echo "Installing ripgrep..."
@@ -62,7 +62,7 @@ fi
 
 # neovim
 # https://github.com/neovim/neovim/wiki/Installing-Neovim
-neovimInstalled=0
+neovimInstalled=1
 if [ $neovimInstalled -eq 1 ]
 then
 echo "Installing neovim..."
@@ -73,7 +73,7 @@ fi
 
 # bat
 # https://github.com/sharkdp/bat
-batInstalled=0
+batInstalled=1
 if [ $batInstalled -eq 1 ]
 then
 echo "Installing bat..."
